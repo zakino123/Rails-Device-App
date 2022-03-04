@@ -34,7 +34,9 @@ Rails.application.configure do
   config.active_storage.service = :local
 
   # Device mailer setting
+  # Action Mailerにはホスト名が保存されていないので、明示的にセットする必要がある。
   config.action_mailer.default_url_options = { host: 'localhost', port: 3000 }
+  # メールの配達方法を指定(よくsmtpプロトコルなどが使われる)
   config.action_mailer.delivery_method = :letter_opener_web
 
   # Don't care if the mailer can't send.
