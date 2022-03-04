@@ -1,32 +1,41 @@
+# Docker Engine 18.06.0以上対応
 version: '3.7'
 
+# アプリケーションを動かすための各要素の指定
 services:
   app:
     container_name: app
     build: .
+    # 仮想端末を配置するコマンド(コンテナを継続させる)
     tty: true
+    # 標準入出力とエラー出力をコンテナに結びつける設定
     stdin_open: true
+    # Dockerfileで定義されているCMDの上書き
     command: bash -c "rm -f tmp/pids/server.pid && bundle exec rails s -p 3000 -b '0.0.0.0'"
+    # ホスト側のカレントディレクトリをコンテナ内のapp下にマウント
     volumes:
       - .:/app
+    # ポート指定(ホスト：コンテナ)
     ports:
       - "3000:3000"
     depends_on:
       - db
 
   db:
+    # mysql8.0イメージを取得
     image: mysql:8.0
     container_name: db
+    # 実行中や停止中にコンテナを再起動
     restart: always
     volumes:
       - ./forDocker/mysql/conf.d:/etc/mysql/conf.d
       - dbvol:/var/lib/mysql
     ports:
       - "3306:3306"
+    # 環境変数設定を行える
     environment:
       MYSQL_ALLOW_EMPTY_PASSWORD: 1
       TZ: "Asia/Tokyo"
 
 volumes:
   dbvol:
-  
