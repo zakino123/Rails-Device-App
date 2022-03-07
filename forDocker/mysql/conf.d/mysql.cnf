@@ -15,6 +15,7 @@ character-set-server = utf8mb4
 # 照合順序を指定(ソートや文字認証など)
 # utf8mb4_unicode_ciは大文字/小文字、絵文字、平仮名の濁点や半濁点を区別しない
 collation-server = utf8mb4_unicode_ci
+# 接続する各クライアントに対してサーバーによって実行される文字列。
 # utf8mb4の値を格納するように指定
 init-connect = SET NAMES utf8mb4
 # character_set_connection、character_set_client、
