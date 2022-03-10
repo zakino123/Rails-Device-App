@@ -92,3 +92,15 @@
 ・devise ユーザーのプロフィール画面作成と編集（デフォルトをカスタマイズ） | Qiita
 
   https://qiita.com/akr03xxx/items/82ba45f7ef4fdbd5c702
+
+・yarn だけで Rails6.1+Simpacker+PostCSS+TailwindCSS 環境を作る | 北山淳也 | zenn
+
+  https://zenn.dev/junki555/articles/911c7e2a849ccd
+
+・JUNKI555/output_manifest_js.js | GitHub
+
+  https://gist.github.com/JUNKI555/8f5a3616be630840b65dbb13769c51c3
+
+・Simpacker 用の manifest.json を出力する Node.js スクリプト を作った | 北山淳也 | zenn
+
+  https://zenn.dev/junki555/articles/d57fb6127a3061
