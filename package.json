@@ -1,5 +1,18 @@
 {
   "private": true,
+  "scripts": {
+    "cleancss": "rimraf ./public/packs/css/",
+    "postcss": "postcss ./app/assets/stylesheets/**/*.css -d ./public/packs/css/",
+    "output_manifest": "node output_manifest_js.js public"
+  },
   "devDependencies": {
+    "autoprefixer": "^10.0.4",
+    "rimraf": "^3.0.2",
+    "postcss": "^8.1.14",
+    "postcss-cli": "^8.3.0",
+    "postcss-import": "^13.0.0",
+    "postcss-nested": "^5.0.2",
+    "tailwindcss": "^2.0.1",
+    "yarn-run-all": "^3.1.1"
   }
 }
