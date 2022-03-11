@@ -20,6 +20,10 @@
 
 <img width="1423" alt="スクリーンショット 2022-03-11 17 19 42" src="https://user-images.githubusercontent.com/75520329/157832825-31e8b650-b013-41f0-9f0f-0a93cd2e4afd.png">
 
+・アカウント登録画面
+
+<img width="1427" alt="スクリーンショット 2022-03-11 18 19 56" src="https://user-images.githubusercontent.com/75520329/157839200-876f424a-65e3-4879-b0ea-2f5f6960a974.png">
+
 ## Reference sources
 ・docker-compose 下で rails new して Rails6.1+deviseを試す | 北山淳也 | zenn
 
