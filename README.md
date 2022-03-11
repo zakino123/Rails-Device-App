@@ -15,6 +15,11 @@
 
     docker-compose up -d
 
+## Tailwindcssでスタイル適用
+・ログイン画面
+
+<img width="1423" alt="スクリーンショット 2022-03-11 17 19 42" src="https://user-images.githubusercontent.com/75520329/157832825-31e8b650-b013-41f0-9f0f-0a93cd2e4afd.png">
+
 ## Reference sources
 ・docker-compose 下で rails new して Rails6.1+deviseを試す | 北山淳也 | zenn
 
@@ -104,3 +109,11 @@
 ・Simpacker 用の manifest.json を出力する Node.js スクリプト を作った | 北山淳也 | zenn
 
   https://zenn.dev/junki555/articles/d57fb6127a3061
+
+・tailwindcss公式
+
+  https://tailwindcss.jp/
+
+・Tailwind CSS に流動的 Spacing を導入
+
+  https://zenn.dev/ixkaito/articles/tailwindcss-fluid-spacing
