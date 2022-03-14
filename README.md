@@ -125,3 +125,20 @@
 ・Tailwind CSS に流動的 Spacing を導入
 
   https://zenn.dev/ixkaito/articles/tailwindcss-fluid-spacing
+
+### LINEログイン機能
+・【画像付き】RailsでDeviseを利用してLINEログイン機能を実装
+
+  https://qiita.com/s10aim_tana/items/2d174d4e31e4041700ee
+
+・LINE Developers
+
+  https://developers.line.biz/ja/
+
+・deviseとOmniAuthをRailsアプリケーションに導入しテストする
+
+  https://qiita.com/yuki_0920/items/003d8b1c73352378188d#:~:text=OmniAuth%E3%81%A8%E3%81%AF%E3%80%81%E5%A4%96%E9%83%A8%E3%82%B5%E3%83%BC%E3%83%93%E3%82%B9,%E3%82%92%E6%8F%90%E4%BE%9B%E3%81%99%E3%82%8B%E4%BB%95%E7%B5%84%E3%81%BF%E3%81%A7%E3%81%99%E3%80%82
+
+・ngrokの切り替え時に注意すること
+
+  https://qiita.com/hirokun0204/items/a18427c50c90676aed95
