@@ -31,3 +31,5 @@ vendor/bundle
 node_modules
 
 /public/packs
+
+.env
