@@ -3,7 +3,8 @@ Rails.application.routes.draw do
     :confirmations => 'users/confirmations',
     :registrations => 'users/registrations',
     :sessions => 'users/sessions',
-    :passwords => 'users/passwords'
+    :passwords => 'users/passwords',
+    :omniauth_callbacks => "omniauth_callbacks"
   }
   get 'home/index'
   get 'home/show'
