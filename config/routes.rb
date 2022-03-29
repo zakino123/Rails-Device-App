@@ -1,6 +1,4 @@
 Rails.application.routes.draw do
-  get 'users/index'
-  get 'users/show'
   devise_for :users, :controllers => {
     :confirmations => 'users/confirmations',
     :registrations => 'users/registrations',
@@ -10,6 +8,8 @@ Rails.application.routes.draw do
   }
   get 'home/index'
   get 'home/show'
+  get 'users', to: 'users#index'
+  get 'users/:id', to: 'users#show'
 
   root to: "home#index"
 
