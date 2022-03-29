@@ -51,6 +51,8 @@ group :development do
   gem 'spring'
 
   gem 'letter_opener_web'
+  gem 'rubocop'
+  gem 'rubocop-rails'
 end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
