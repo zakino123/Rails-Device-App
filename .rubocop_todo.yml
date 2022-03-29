@@ -10,54 +10,54 @@
 # This cop supports safe auto-correction (--auto-correct).
 # Configuration parameters: TreatCommentsAsGroupSeparators, ConsiderPunctuation, Include.
 # Include: **/*.gemfile, **/Gemfile, **/gems.rb
-Bundler/OrderedGems:
-  Exclude:
-    - 'Gemfile'
+# Bundler/OrderedGems:
+#   Exclude:
+#     - 'Gemfile'
 
 # Offense count: 1
 # This cop supports safe auto-correction (--auto-correct).
-Layout/EmptyLineAfterGuardClause:
-  Exclude:
-    - 'app/models/user.rb'
+# Layout/EmptyLineAfterGuardClause:
+#   Exclude:
+#     - 'app/models/user.rb'
 
 # Offense count: 2
 # This cop supports safe auto-correction (--auto-correct).
-Layout/EmptyLines:
-  Exclude:
-    - 'config/environments/development.rb'
-    - 'db/migrate/20220303084254_devise_create_users.rb'
+# Layout/EmptyLines:
+#   Exclude:
+#     - 'config/environments/development.rb'
+#     - 'db/migrate/20220303084254_devise_create_users.rb'
 
 # Offense count: 1
 # This cop supports safe auto-correction (--auto-correct).
 # Configuration parameters: EnforcedStyle.
 # SupportedStyles: around, only_before
-Layout/EmptyLinesAroundAccessModifier:
-  Exclude:
-    - 'app/controllers/omniauth_callbacks_controller.rb'
+# Layout/EmptyLinesAroundAccessModifier:
+#   Exclude:
+#     - 'app/controllers/omniauth_callbacks_controller.rb'
 
 # Offense count: 2
 # This cop supports safe auto-correction (--auto-correct).
 # Configuration parameters: EnforcedStyle.
 # SupportedStyles: empty_lines, no_empty_lines
-Layout/EmptyLinesAroundBlockBody:
-  Exclude:
-    - 'db/schema.rb'
+# Layout/EmptyLinesAroundBlockBody:
+#   Exclude:
+#     - 'db/schema.rb'
 
 # Offense count: 2
 # This cop supports safe auto-correction (--auto-correct).
 # Configuration parameters: EnforcedStyle, EnforcedStyleForEmptyBrackets.
 # SupportedStyles: space, no_space, compact
 # SupportedStylesForEmptyBrackets: space, no_space
-Layout/SpaceInsideArrayLiteralBrackets:
-  Exclude:
-    - 'config/environments/production.rb'
+# Layout/SpaceInsideArrayLiteralBrackets:
+#   Exclude:
+#     - 'config/environments/production.rb'
 
 # Offense count: 2
 # This cop supports safe auto-correction (--auto-correct).
 # Configuration parameters: AllowUnusedKeywordArguments, IgnoreEmptyMethods, IgnoreNotImplementedMethods.
-Lint/UnusedMethodArgument:
-  Exclude:
-    - 'app/controllers/omniauth_callbacks_controller.rb'
+# Lint/UnusedMethodArgument:
+#   Exclude:
+#     - 'app/controllers/omniauth_callbacks_controller.rb'
 
 # Offense count: 4
 Lint/UselessAssignment:
@@ -67,13 +67,13 @@ Lint/UselessAssignment:
 # Offense count: 24
 # This cop supports unsafe auto-correction (--auto-correct-all).
 # Configuration parameters: AllowComments.
-Lint/UselessMethodDefinition:
-  Exclude:
-    - 'app/controllers/users/confirmations_controller.rb'
-    - 'app/controllers/users/passwords_controller.rb'
-    - 'app/controllers/users/registrations_controller.rb'
-    - 'app/controllers/users/sessions_controller.rb'
-    - 'app/controllers/users/unlocks_controller.rb'
+# Lint/UselessMethodDefinition:
+#   Exclude:
+#     - 'app/controllers/users/confirmations_controller.rb'
+#     - 'app/controllers/users/passwords_controller.rb'
+#     - 'app/controllers/users/registrations_controller.rb'
+#     - 'app/controllers/users/sessions_controller.rb'
+#     - 'app/controllers/users/unlocks_controller.rb'
 
 # Offense count: 2
 # Configuration parameters: IgnoredMethods, CountRepeatedAttributes.

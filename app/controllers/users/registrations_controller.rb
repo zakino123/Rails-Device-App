@@ -14,9 +14,6 @@ class Users::RegistrationsController < Devise::RegistrationsController
   end
 
   # POST /resource
-  def create
-    super
-  end
 
   # GET /resource/edit
   def edit
@@ -28,23 +25,14 @@ class Users::RegistrationsController < Devise::RegistrationsController
   end
 
   # PUT /resource
-  def update
-    super
-  end
 
   # DELETE /resource
-  def destroy
-    super
-  end
 
   # GET /resource/cancel
   # 通常はサインイン後に
   # 期限切れになるセッションデータを強制的に今すぐ期限切れにします。
   # これは、ユーザーが全てのOAuthセッションデータを削除して、
   # 途中でoauthサインイン/アップをキャンセルしたい場合に便利です。
-  def cancel
-    super
-  end
 
   protected
 
@@ -59,12 +47,6 @@ class Users::RegistrationsController < Devise::RegistrationsController
   end
 
   # サインアップ後に使用する path
-  def after_sign_up_path_for(resource)
-    super(resource)
-  end
 
   # アクティブでないアカウントのサインアップ後に使用する path
-  def after_inactive_sign_up_path_for(resource)
-    super(resource)
-  end
 end

@@ -4,6 +4,7 @@ class OmniauthCallbacksController < ApplicationController
   end
 
   private
+
   def basic_action
     @omniauth = request.env["omniauth.auth"]
     if @omniauth.present?
@@ -19,7 +20,7 @@ class OmniauthCallbacksController < ApplicationController
     redirect_to root_path
   end
 
-  def fake_email(uid, provider)
+  def fake_email(_uid, _provider)
     "#{auth.uid}-#{auth.provider}@example.com"
   end
 end

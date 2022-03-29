@@ -13,14 +13,8 @@ class Users::SessionsController < Devise::SessionsController
   end
 
   # POST /resource/sign_in
-  def create
-    super
-  end
 
   # GET /resource/sign_out
-  def destroy
-    super
-  end
 
   protected
 
