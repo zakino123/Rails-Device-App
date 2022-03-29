@@ -10,6 +10,7 @@ Rails.application.routes.draw do
   get 'home/show'
   get 'users', to: 'users#index'
   get 'users/:id', to: 'users#show'
+  get 'authorize_error', to: 'users#authorize_error'
 
   root to: "home#index"
 

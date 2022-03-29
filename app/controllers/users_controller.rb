@@ -7,4 +7,7 @@ class UsersController < ApplicationController
     @user = User.find(params[:id])
     authorize!
   end
+
+  def authorize_error
+  end
 end
