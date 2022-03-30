@@ -21,6 +21,7 @@
 #  remember_created_at    :datetime
 #  reset_password_sent_at :datetime
 #  reset_password_token   :string(255)
+#  role                   :integer          default(1), not null
 #  sign_in_count          :integer          default(0), not null
 #  uid                    :string(255)
 #  unconfirmed_email      :string(255)
@@ -35,8 +36,8 @@
 #  index_users_on_reset_password_token  (reset_password_token) UNIQUE
 #  index_users_on_unlock_token          (unlock_token) UNIQUE
 #
-# Userモデル定義
 class User < ApplicationRecord
+  enum role: { general: 1, admin: 99 }
   # Include default devise modules. Others available are:
   # :confirmable, :lockable, :timeoutable, :trackable and :omniauthable
   devise :database_authenticatable, :registerable,
@@ -51,7 +52,7 @@ class User < ApplicationRecord
   def put_values(omniauth)
     return if provider.to_s != omniauth['provider'].to_s || uid != omniauth['uid']
 
-    # put_valuesメソッド以下の内容は現状使用していない為、コメントアウト
+    # put_valuesメソッド以下の内容は現状使用していない為、コメントアウトしました
     # credentials = omniauth['credentials']
     # info = omniauth['info']
 
