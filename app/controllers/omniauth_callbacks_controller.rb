@@ -9,18 +9,18 @@ class OmniauthCallbacksController < ApplicationController
   private
 
   def basic_action
-    @omniauth = request.env["omniauth.auth"]
+    @omniauth = request.env['omniauth.auth']
     if @omniauth.present?
-      @profile = User.find_or_initialize_by(provider: @omniauth["provider"], uid: @omniauth["uid"])
+      @profile = User.find_or_initialize_by(provider: @omniauth['provider'], uid: @omniauth['uid'])
       if @profile.email.blank?
-        email = @omniauth["info"]["email"] ? @omniauth["info"]["email"] : "#{omniauth["uid"]}-#{@omniauth["provider"]}@example.com"
-        @profile = current_user || User.create!(provider: @omniauth["provider"], uid: @omniauth["uid"],
-                                                email: email, name: @omniauth["info"]["name"], password: Devise.friendly_token[0, 20])
+        email = @omniauth['info']['email'] || "#{omniauth['uid']}-#{@omniauth['provider']}@example.com"
+        @profile = current_user || User.create!(provider: @omniauth['provider'], uid: @omniauth['uid'],
+                                                email: email, name: @omniauth['info']['name'], password: Devise.friendly_token[0, 20])
       end
       @profile.put_values(@omniauth)
       sign_in(:user, @profile)
     end
-    flash[:notice] = "ログインしました"
+    flash[:notice] = 'ログインしました'
     redirect_to root_path
   end
 

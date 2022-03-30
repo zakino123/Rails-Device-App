@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-require "active_support/core_ext/integer/time"
+require 'active_support/core_ext/integer/time'
 
 Rails.application.configure do
   # config.hosts << "24ac-240f-65-c27-1-952c-65e9-6e16-6ebd.ngrok.io"
