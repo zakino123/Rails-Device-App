@@ -17,7 +17,7 @@ class OmniauthCallbacksController < ApplicationController
         @profile = current_user || User.create!(provider: @omniauth["provider"], uid: @omniauth["uid"],
                                                 email: email, name: @omniauth["info"]["name"], password: Devise.friendly_token[0, 20])
       end
-      @profile.set_values(@omniauth)
+      @profile.put_values(@omniauth)
       sign_in(:user, @profile)
     end
     flash[:notice] = "ログインしました"
