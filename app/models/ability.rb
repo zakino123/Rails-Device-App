@@ -5,7 +5,7 @@ class Ability
 
   def initialize(user)
     # ログイン/アウトはみんな許可
-    can :manage, :all
+    can :manage, [:session, :registration]
 
     user ||= User.new
     if user.admin?
