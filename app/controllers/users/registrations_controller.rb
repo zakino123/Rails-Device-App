@@ -20,6 +20,7 @@ module Users
     # GET /resource/edit
     def edit
       super
+      # authorize!
 
       puts '=========================='
       puts 'GET /resources/edit'
