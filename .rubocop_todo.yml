@@ -7,9 +7,9 @@
 # versions of RuboCop, may require this file to be generated again.
 
 # Offense count: 4
-Lint/UselessAssignment:
-  Exclude:
-    - 'app/models/user.rb'
+# Lint/UselessAssignment:
+#   Exclude:
+#     - 'app/models/user.rb'
 
 # Offense count: 2
 # Configuration parameters: IgnoredMethods, CountRepeatedAttributes.
