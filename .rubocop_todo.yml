@@ -92,43 +92,43 @@ Metrics/MethodLength:
   Max: 24
 
 # Offense count: 2
-Naming/AccessorMethodName:
-  Exclude:
-    - 'app/models/user.rb'
+# Naming/AccessorMethodName:
+#   Exclude:
+#     - 'app/models/user.rb'
 
 # Offense count: 6
 # This cop supports safe auto-correction (--auto-correct).
 # Configuration parameters: EnforcedStyle.
 # SupportedStyles: nested, compact
-Style/ClassAndModuleChildren:
-  Exclude:
-    - 'app/controllers/users/confirmations_controller.rb'
-    - 'app/controllers/users/omniauth_callbacks_controller.rb'
-    - 'app/controllers/users/passwords_controller.rb'
-    - 'app/controllers/users/registrations_controller.rb'
-    - 'app/controllers/users/sessions_controller.rb'
-    - 'app/controllers/users/unlocks_controller.rb'
+# Style/ClassAndModuleChildren:
+#   Exclude:
+#     - 'app/controllers/users/confirmations_controller.rb'
+#     - 'app/controllers/users/omniauth_callbacks_controller.rb'
+#     - 'app/controllers/users/passwords_controller.rb'
+#     - 'app/controllers/users/registrations_controller.rb'
+#     - 'app/controllers/users/sessions_controller.rb'
+#     - 'app/controllers/users/unlocks_controller.rb'
 
 # Offense count: 19
 # Configuration parameters: AllowedConstants.
-Style/Documentation:
-  Enabled: false
+# Style/Documentation:
+#   Enabled: false
 
 # Offense count: 3
 # This cop supports safe auto-correction (--auto-correct).
 # Configuration parameters: EnforcedStyle.
 # SupportedStyles: compact, expanded
-Style/EmptyMethod:
-  Exclude:
-    - 'app/controllers/home_controller.rb'
-    - 'app/controllers/users_controller.rb'
+# Style/EmptyMethod:
+#   Exclude:
+#     - 'app/controllers/home_controller.rb'
+#     - 'app/controllers/users_controller.rb'
 
 # Offense count: 44
 # This cop supports safe auto-correction (--auto-correct).
 # Configuration parameters: EnforcedStyle.
 # SupportedStyles: always, always_true, never
-Style/FrozenStringLiteralComment:
-  Enabled: false
+# Style/FrozenStringLiteralComment:
+#   Enabled: false
 
 # Offense count: 1
 # This cop supports safe auto-correction (--auto-correct).

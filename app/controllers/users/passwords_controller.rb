@@ -1,13 +1,16 @@
 # frozen_string_literal: true
 
-class Users::PasswordsController < Devise::PasswordsController
-  # GET /resource/password/new
+module Users
+  # PasswordsController定義
+  class PasswordsController < Devise::PasswordsController
+    # GET /resource/password/new
 
-  # POST /resource/password
+    # POST /resource/password
 
-  # GET /resource/password/edit?reset_password_token=abcdef
+    # GET /resource/password/edit?reset_password_token=abcdef
 
-  # PUT /resource/password
+    # PUT /resource/password
 
-  # リセットパスワードの指示を送信した後に使用する path
+    # リセットパスワードの指示を送信した後に使用する path
+  end
 end

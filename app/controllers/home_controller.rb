@@ -1,7 +1,8 @@
-class HomeController < ApplicationController
-  def index
-  end
+# frozen_string_literal: true
 
-  def show
-  end
+# HomeController定義
+class HomeController < ApplicationController
+  def index; end
+
+  def show; end
 end

@@ -1,3 +1,6 @@
+# frozen_string_literal: true
+
+# ApplicationController定義
 class ApplicationController < ActionController::Base
   include Banken
 

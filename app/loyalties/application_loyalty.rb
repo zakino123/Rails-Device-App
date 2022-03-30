@@ -1,3 +1,6 @@
+# frozen_string_literal: true
+
+# ApplicationLoyalty定義
 class ApplicationLoyalty
   attr_reader :user, :record
 
